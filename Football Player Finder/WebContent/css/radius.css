@@ -18,6 +18,11 @@
 	margin-top: 1%;
 }
 
+a {
+	text-decoration: none;
+	color: #800000;
+}
+
 #radiusP {
 	background-color: white;
 	border: 2px solid #ff0b0b;
@@ -42,18 +47,38 @@
 	background: linear-gradient(90deg, blue 33%, white 33%, white 66%, red 66%);
 	border: 2px solid #ff0b0b;
 }
-#submit #radiusP{
-	margin-left:-15px;
+
+#submit #radiusP {
+	margin-left: -15px;
 }
-#submit #radiusL{
-	margin-left:-15px;
+
+#submit #radiusL {
+	margin-left: -15px;
 }
-#submit #radiusS{
-	margin-left:-15px;
+
+#submit #radiusS {
+	margin-left: -15px;
 }
-#submit #radiusB{
-	margin-left:-15px;
+
+#submit #radiusB {
+	margin-left: -15px;
 }
-#submit #radius1{
-	margin-left:-15px;
+
+#submit #radius1 {
+	margin-left: -15px;
+}
+#radiusP a:hover {
+	color: #ff8000;
+}
+#radiusL a:hover {
+	color: #ff0000;
+}
+#radiusS a:hover {
+	color: #8000ff;
+}
+#radiusB a:hover {
+	color: #ffffff;
+}
+#radius1 a:hover {
+	color: #00e1e1;
 }

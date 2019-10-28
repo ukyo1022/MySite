@@ -36,7 +36,13 @@ li a {
 	border-radius: 25px;
 	text-align: center;
 	padding: 5px;
-	color:#ffff00;
+	color: #ffff00;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #ffff00;
+	color: #4646ff;
 }
 
 #title {
