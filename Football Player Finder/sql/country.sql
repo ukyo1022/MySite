@@ -1,0 +1,118 @@
+set names utf8;
+set foreign_key_checks=0;
+
+use mysitedb;
+drop table if exists country;
+
+create table country(
+country varchar(20) unique,
+region varchar(7)
+);
+
+INSERT INTO country(country,region)VALUES("アルバニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("アイスランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("アンドラ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("オーストリア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ベラルーシ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ボスニア・ヘルツェゴビナ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ベルギー","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ブルガリア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("クロアチア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("チェコ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("デンマーク","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("エストニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("フィンランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("フランス","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ドイツ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ギリシャ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ハンガリー","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("アイルランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("イタリア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("リトアニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("モンテネグロ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("オランダ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("北マケドニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ノルウェー","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ポーランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ポルトガル","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ルーマニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ロシア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("セルビア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スロバキア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スロベニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スペイン","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スウェーデン","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スイス","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ウクライナ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("イングランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("ウェールズ","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("北アイルランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("スコットランド","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("アルメニア","ヨーロッパ");
+INSERT INTO country(country,region)VALUES("トルコ","ヨーロッパ");
+
+INSERT INTO country(country,region)VALUES("日本","アジア");
+INSERT INTO country(country,region)VALUES("中国","アジア");
+INSERT INTO country(country,region)VALUES("韓国","アジア");
+INSERT INTO country(country,region)VALUES("北朝鮮","アジア");
+INSERT INTO country(country,region)VALUES("インドネシア","アジア");
+INSERT INTO country(country,region)VALUES("カザフスタン","アジア");
+INSERT INTO country(country,region)VALUES("インド","アジア");
+INSERT INTO country(country,region)VALUES("イラン","アジア");
+INSERT INTO country(country,region)VALUES("タジキスタン","アジア");
+INSERT INTO country(country,region)VALUES("ウズベキスタン","アジア");
+INSERT INTO country(country,region)VALUES("オーストラリア","アジア");
+INSERT INTO country(country,region)VALUES("ニュージーランド","アジア");
+INSERT INTO country(country,region)VALUES("サウジアラビア","アジア");
+INSERT INTO country(country,region)VALUES("イラク","アジア");
+INSERT INTO country(country,region)VALUES("カタール","アジア");
+INSERT INTO country(country,region)VALUES("イスラエル","アジア");
+INSERT INTO country(country,region)VALUES("ジョージア","アジア");
+
+INSERT INTO country(country,region)VALUES("アメリカ","北中米");
+INSERT INTO country(country,region)VALUES("メキシコ","北中米");
+INSERT INTO country(country,region)VALUES("カナダ","北中米");
+INSERT INTO country(country,region)VALUES("コスタリカ","北中米");
+INSERT INTO country(country,region)VALUES("ドミニカ","北中米");
+INSERT INTO country(country,region)VALUES("ハイチ","北中米");
+INSERT INTO country(country,region)VALUES("ジャマイカ","北中米");
+
+INSERT INTO country(country,region)VALUES("アルジェリア","アフリカ");
+INSERT INTO country(country,region)VALUES("エジプト","アフリカ");
+INSERT INTO country(country,region)VALUES("モロッコ","アフリカ");
+INSERT INTO country(country,region)VALUES("チュニジア","アフリカ");
+INSERT INTO country(country,region)VALUES("ベナン","アフリカ");
+INSERT INTO country(country,region)VALUES("ブルキナファソ","アフリカ");
+INSERT INTO country(country,region)VALUES("コートジボワール","アフリカ");
+INSERT INTO country(country,region)VALUES("ガーナ","アフリカ");
+INSERT INTO country(country,region)VALUES("ギニア","アフリカ");
+INSERT INTO country(country,region)VALUES("ギニアビサウ","アフリカ");
+INSERT INTO country(country,region)VALUES("リベリア","アフリカ");
+INSERT INTO country(country,region)VALUES("マリ","アフリカ");
+INSERT INTO country(country,region)VALUES("モーリタニア","アフリカ");
+INSERT INTO country(country,region)VALUES("ナイジェリア","アフリカ");
+INSERT INTO country(country,region)VALUES("セネガル","アフリカ");
+INSERT INTO country(country,region)VALUES("トーゴ","アフリカ");
+INSERT INTO country(country,region)VALUES("アンゴラ","アフリカ");
+INSERT INTO country(country,region)VALUES("カメルーン","アフリカ");
+INSERT INTO country(country,region)VALUES("中央アフリカ","アフリカ");
+INSERT INTO country(country,region)VALUES("コンゴ","アフリカ");
+INSERT INTO country(country,region)VALUES("ガボン","アフリカ");
+INSERT INTO country(country,region)VALUES("エチオピア","アフリカ");
+INSERT INTO country(country,region)VALUES("ケニア","アフリカ");
+INSERT INTO country(country,region)VALUES("モーリシャス","アフリカ");
+INSERT INTO country(country,region)VALUES("モザンビーク","アフリカ");
+INSERT INTO country(country,region)VALUES("ナミビア","アフリカ");
+INSERT INTO country(country,region)VALUES("南アフリカ","アフリカ");
+
+INSERT INTO country(country,region)VALUES("アルゼンチン","南米");
+INSERT INTO country(country,region)VALUES("ウルグアイ","南米");
+INSERT INTO country(country,region)VALUES("エクアドル","南米");
+INSERT INTO country(country,region)VALUES("コロンビア","南米");
+INSERT INTO country(country,region)VALUES("スリナム","南米");
+INSERT INTO country(country,region)VALUES("チリ","南米");
+INSERT INTO country(country,region)VALUES("パラグアイ","南米");
+INSERT INTO country(country,region)VALUES("ブラジル","南米");
+INSERT INTO country(country,region)VALUES("ベネズエラ","南米");
+INSERT INTO country(country,region)VALUES("ペルー","南米");
+INSERT INTO country(country,region)VALUES("ボリビア","南米");

@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+.vertical_list {
+	margin-top:20px;
+	border-collapse: collapse;
+	width: 75%;
+	height: 30%;
+	margin-left: 10%;
+	border: #c0c0c0 solid 2px;
+}
+tr {
+	border: gray;
+	height:500%;
+}
+th {
+	font-family: arial;
+	font-size:22px;
+	background-color: #99adf4;
+	color: #2e2e2e;
+	padding: 1%;
+	border: #c0c0c0 solid 2px;
+	text-align:left;
+	width:25%;
+}
+td {
+	border:#c0c0c0 solid 2px;
+	font-size:15px;
+	background-color:#fff;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="com.internousdev.mysite1.action" extends="struts-default">
+
+		<!-- ホームアクション -->
+		<action name="HomeAction" class="com.internousdev.mysite1.action.HomeAction"
+			method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+		<!-- このサイトについて -->
+		<action name="thisSiteAction" class="com.internousdev.mysite1.action.thisSiteAction"
+			method="execute">
+			<result name="success">thisSite.jsp</result>
+		</action>
+		<!-- ポジションの説明 -->
+		<action name="qPositionAction" class="com.internousdev.mysite1.action.qPositionAction"
+			method="execute">
+			<result name="success">qPosition.jsp</result>
+		</action>
+		<!-- それぞれのリーグの特徴 -->
+		<action name="featureLeagueAction"
+			class="com.internousdev.mysite1.action.featureLeagueAction" method="execute">
+			<result name="success">fLeague.jsp</result>
+		</action>
+		<!-- 選手追加アクション -->
+		<action name="PlayerAddAction" class="com.internousdev.mysite1.action.PlayerAddAction"
+			method="execute">
+			<result name="success">playeradd.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+		<action name="PlayerSetAction" class="com.internousdev.mysite1.action.PlayerSetAction"
+			method="execute">
+			<result name="success">playerset.jsp</result>
+		</action>
+		<action name="PlayerInsertAction"
+			class="com.internousdev.mysite1.action.PlayerInsertAction" method="execute">
+			<result name="success">PlayerInsertComplete.jsp</result>
+			<result name="error">playerset.jsp</result>
+		</action>
+
+		<!-- リーグ選択画面アクションクラス -->
+		<action name="leagueAction" class="com.internousdev.mysite1.action.leagueAction"
+			method="execute">
+			<result name="success">leagues.jsp</result>
+		</action>
+
+		<!-- ポジション検索 -->
+		<action name="PositionPlayerAction"
+			class="com.internousdev.mysite1.action.PositionPlayerAction" method="execute">
+			<result name="success">positionPlayer.jsp</result>
+		</action>
+
+		<!-- 国籍選択画面 -->
+		<action name="CountryAction" class="com.internousdev.mysite1.action.CountryAction"
+			method="execute">
+			<result name="success">country.jsp</result>
+		</action>
+		<action name="CountryPlayerAction"
+			class="com.internousdev.mysite1.action.CountryPlayerAction" method="execute">
+			<result name="success">countryplayer.jsp</result>
+		</action>
+
+		<!-- 各リーグのクラブ情報を取り出すアクションクラス -->
+		<action name="premierAction" class="com.internousdev.mysite1.action.premierAction"
+			method="execute">
+			<result name="success">pleague.jsp</result>
+		</action>
+
+		<action name="laligaAction" class="com.internousdev.mysite1.action.laligaAction"
+			method="execute">
+			<result name="success">pleague.jsp</result>
+		</action>
+
+		<action name="serieAction" class="com.internousdev.mysite1.action.serieAction"
+			method="execute">
+			<result name="success">pleague.jsp</result>
+		</action>
+
+		<action name="bundesAction" class="com.internousdev.mysite1.action.bundesAction"
+			method="execute">
+			<result name="success">pleague.jsp</result>
+		</action>
+
+		<action name="ligue1Action" class="com.internousdev.mysite1.action.ligue1Action"
+			method="execute">
+			<result name="success">pleague.jsp</result>
+		</action>
+
+		<!-- クラブの選手情報を取り出すアクションクラス -->
+		<action name="ClubPlayerAction" class="com.internousdev.mysite1.action.ClubPlayerAction"
+			method="execute">
+			<result name="success">player.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+#radius {
+	border: 2px solid #208fff;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-left: 30%;
+	width: 41%;
+	font-size: 17px;
+	background-color: #4646ff;
+	border-radius: 25px;
+}
+
+#radiusP, #radiusL, #radiusS, #radiusB, #radius1 {
+	border-radius: 25px;
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 1%;
+}
+
+#radiusP {
+	background-color: white;
+	border: 2px solid #ff0b0b;
+}
+
+#radiusL {
+	background: linear-gradient(180deg, red 15%, yellow 15%, yellow 85%, red 15%);
+	border: 2px solid #ff0b0b;
+}
+
+#radiusS {
+	background: linear-gradient(90deg, #03cb76 33%, white 33%, white 66%, red 66%);
+	border: 2px solid #ff0b0b;
+}
+
+#radiusB {
+	background: linear-gradient(180deg, black 20%, red 20%, red 70%, orange 70%);
+	border: 2px solid #ff0b0b;
+}
+
+#radius1 {
+	background: linear-gradient(90deg, blue 33%, white 33%, white 66%, red 66%);
+	border: 2px solid #ff0b0b;
+}
+#submit #radiusP{
+	margin-left:-15px;
+}
+#submit #radiusL{
+	margin-left:-15px;
+}
+#submit #radiusS{
+	margin-left:-15px;
+}
+#submit #radiusB{
+	margin-left:-15px;
+}
+#submit #radius1{
+	margin-left:-15px;
+}
