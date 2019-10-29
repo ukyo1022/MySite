@@ -77,8 +77,7 @@
 						value='<s:property value="%{name}"/>' />
 				</p>
 				<p>
-					パスワード <input type="password" name="password"
-						value='<s:property value="%{password}"/>' />
+					パスワード <input type="password" name="password" />
 				</p>
 				<input type="submit" value="ログイン" />
 			</s:form>

@@ -9,33 +9,62 @@ import com.internousdev.mysite1.util.DBConnector;
 
 public class AdminDAO {
 
-	public boolean isExists(String name,String password){
+	public boolean isExists(String name, String password) {
 
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
-		boolean result=false;
+		boolean result = false;
 
-		String sql="select * from admin where name=? and password=?";
+		String sql = "select * from admin where name=? and password=?";
 
-		try{
-			PreparedStatement ps=con.prepareStatement(sql);
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, name);
 			ps.setString(2, password);
-			ResultSet rs=ps.executeQuery();
+			ResultSet rs = ps.executeQuery();
 
-			if(rs.next()){
-				result=true;
+			if (rs.next()) {
+				result = true;
 			}
 
-		}catch (SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			try{
-			con.close();
-			}catch(SQLException e){
+			try {
+				con.close();
+			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 		}
+		return result;
+	}
+
+	public boolean insertAdmin(String id, String password) {
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		boolean result = false;
+
+		String sql = "insert into admin(name,password)values(?,?)";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, id);
+			ps.setString(2, password);
+			int r = ps.executeUpdate();
+			if (r > 0) {
+				result = true;
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
 		return result;
 	}
 }

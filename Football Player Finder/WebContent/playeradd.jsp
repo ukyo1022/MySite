@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/radius.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>選手追加画面</title>
+<title>管理者画面</title>
 </head>
 <body>
 	<div id="header">
@@ -21,7 +21,7 @@
 	</div>
 	<div id="main">
 		<div id="top">
-			<h2>選手追加</h2>
+			<h2>管理者画面</h2>
 		</div>
 		<div id="box">
 			<h2>リーグ一覧</h2>
@@ -47,6 +47,9 @@
 					<input type="hidden" value="5" name="leagueid" />
 				</s:form>
 			</div>
+			<h2>
+				<a href='<s:url action="InsertAdminAction"/>'>管理者登録</a>
+			</h2>
 			<h2>
 				<a href='<s:url action="HomeAction"/>'>ホームへ</a>
 			</h2>

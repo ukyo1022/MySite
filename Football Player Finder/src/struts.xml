@@ -12,6 +12,15 @@
 			method="execute">
 			<result name="success">index.jsp</result>
 		</action>
+		<action name="InsertAdminAction"
+			class="com.internousdev.mysite1.action.InsertAdminAction" method="execute">
+			<result name="success">insertAdmin.jsp</result>
+		</action>
+		<action name="InsertAddCAction"
+			class="com.internousdev.mysite1.action.InsertAddCAction" method="execute">
+			<result name="success">playeradd.jsp</result>
+			<result name="error">insertAdmin.jsp</result>
+		</action>
 		<!-- このサイトについて -->
 		<action name="thisSiteAction" class="com.internousdev.mysite1.action.thisSiteAction"
 			method="execute">
