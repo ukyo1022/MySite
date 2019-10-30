@@ -16,8 +16,8 @@
 			class="com.internousdev.mysite1.action.InsertAdminAction" method="execute">
 			<result name="success">insertAdmin.jsp</result>
 		</action>
-		<action name="InsertAddCAction"
-			class="com.internousdev.mysite1.action.InsertAddCAction" method="execute">
+		<action name="InsertAddCAction" class="com.internousdev.mysite1.action.InsertAddCAction"
+			method="execute">
 			<result name="success">playeradd.jsp</result>
 			<result name="error">insertAdmin.jsp</result>
 		</action>
@@ -51,7 +51,25 @@
 			<result name="success">PlayerInsertComplete.jsp</result>
 			<result name="error">playerset.jsp</result>
 		</action>
-
+		<!-- 選手情報削除 -->
+		<action name="PlayerDeleteAction"
+			class="com.internousdev.mysite1.action.PlayerDeleteAction" method="execute">
+			<result name="success">deletePlayerLeague.jsp</result>
+		</action>
+		<action name="DeletePlayersClubAction"
+			class="com.internousdev.mysite1.action.DeletePlayersClubAction"
+			method="execute">
+			<result name="success">deletePlayersClub.jsp</result>
+		</action>
+		<action name="SetDeletePlayerAction"
+			class="com.internousdev.mysite1.action.SetDeletePlayerAction" method="execute">
+			<result name="success">setDeletePlayersClub.jsp</result>
+		</action>
+		<action name="DeleteThisPlayerAction"
+			class="com.internousdev.mysite1.action.DeleteThisPlayerAction" method="execute">
+			<result name="success">playeradd.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
 		<!-- リーグ選択画面アクションクラス -->
 		<action name="leagueAction" class="com.internousdev.mysite1.action.leagueAction"
 			method="execute">

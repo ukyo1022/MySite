@@ -10,7 +10,7 @@ import com.internousdev.mysite1.dao.premierDAO;
 import com.internousdev.mysite1.dto.premierDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class PlayerSetAction extends ActionSupport implements SessionAware {
+public class DeletePlayersClubAction extends ActionSupport implements SessionAware{
 
 	private String clubname;
 	private int id;
@@ -23,38 +23,34 @@ public class PlayerSetAction extends ActionSupport implements SessionAware {
 	public String execute() throws SQLException {
 		String result = SUCCESS;
 
-		if(leagueid.equals("1")){
+		if (leagueid.equals("1")) {
 			premierList = dao.getPremierClubInfo();
-			session.put("premierList",premierList);
-			i="1";
+			session.put("premierList", premierList);
+			i = "1";
 			session.put("league", i);
 			return result;
-		}
-		else if(leagueid.equals("2")){
+		} else if (leagueid.equals("2")) {
 			premierList = dao.getLaligaClubInfo();
-			session.put("premierList",premierList);
-			i= "2";
+			session.put("premierList", premierList);
+			i = "2";
 			session.put("league", i);
 			return result;
-		}
-		else if(leagueid.equals("3")){
+		} else if (leagueid.equals("3")) {
 			premierList = dao.getSerieClubInfo();
-			session.put("premierList",premierList);
-			i="3";
+			session.put("premierList", premierList);
+			i = "3";
 			session.put("league", i);
 			return result;
-		}
-		else if(leagueid.equals("4")){
+		} else if (leagueid.equals("4")) {
 			premierList = dao.getBundesClubInfo();
-			session.put("premierList",premierList);
-			i="4";
+			session.put("premierList", premierList);
+			i = "4";
 			session.put("league", i);
 			return result;
-		}
-		else if(leagueid.equals("5")){
+		} else if (leagueid.equals("5")) {
 			premierList = dao.getLigue1ClubInfo();
-			session.put("premierList",premierList);
-			i="5";
+			session.put("premierList", premierList);
+			i = "5";
 			session.put("league", i);
 			return result;
 		}

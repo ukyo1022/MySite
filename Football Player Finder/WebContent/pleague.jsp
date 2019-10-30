@@ -43,7 +43,6 @@
 					</s:form>
 				</s:iterator>
 			</tr>
-
 		</table>
 		<br>
 		<div id="box">

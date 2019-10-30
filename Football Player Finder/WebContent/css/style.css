@@ -114,6 +114,10 @@ li a:hover {
 	border-radius: 20px;
 }
 
+#submit {
+	text-align: center;
+}
+
 #right {
 	width: 40%;
 	margin-left: 5%;
@@ -132,4 +136,9 @@ li a:hover {
 	background-color: #ffacac;
 	border: 2px solid red;
 	width: 50%;
+}
+
+#delete_btn {
+	text-align: center;
+	width: 10%;
 }

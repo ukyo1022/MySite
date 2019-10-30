@@ -1,14 +1,14 @@
 @CHARSET "UTF-8";
 
 table {
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	margin: 0 auto;
 	border-collapse: collapse;
 }
 
 tr th {
-	width:30%;
+	width: 20%;
 	height: 25px;
 	padding: 0px;
 	font-weight: bold;
@@ -18,13 +18,15 @@ tr th {
 	background-color: #99adf4;
 	color: white;
 }
+
 tr td {
-	width:30%;
+	width: 20%;
 	height: 25px;
 	padding: 0px;
 	padding-left: 6px;
 	font-size: 15px;
 	text-align: left;
 	border: gray 1px solid;
-	background-color:#fff;
+	background-color: #fff;
+	width: 20%;
 }

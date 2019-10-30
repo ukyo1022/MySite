@@ -35,7 +35,9 @@
 					<option value="北中米">北中米</option>
 					<option value="ヨーロッパ">ヨーロッパ</option>
 				</select>
-				<s:submit value="検索" id="submit_btn" />
+				<div id="submit">
+					<input type="submit" value="検索" />
+				</div>
 			</s:form>
 			<div id="radius">ポジションで探す</div>
 			<br>
@@ -54,7 +56,9 @@
 					<option value="CF">CF</option>
 					<option value="ST">ST</option>
 				</select>
-				<s:submit id="submit_btn" value="検索" />
+				<div id="submit">
+					<input type="submit" value="検索" />
+				</div>
 			</s:form>
 		</div>
 		<div id="right">

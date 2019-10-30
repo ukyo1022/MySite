@@ -48,6 +48,12 @@
 				</s:form>
 			</div>
 			<h2>
+				<a href='<s:url action="PlayerDeleteAction"/>'>選手情報削除 </a>
+			</h2>
+			<h2>
+				<a href='<s:url action="InsertAdminAction"/>'>選手情報編集</a>
+			</h2>
+			<h2>
 				<a href='<s:url action="InsertAdminAction"/>'>管理者登録</a>
 			</h2>
 			<h2>

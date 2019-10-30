@@ -378,29 +378,24 @@ public class ClubPlayerDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 		ArrayList<ClubPlayerDTO> playerList = new ArrayList<ClubPlayerDTO>();
-		String sql="select * from premier_player where position=?";
-		if(league==1){
-			sql="select * from premier_player where position=?";
+		String sql = "select * from premier_player where position=?";
+		if (league == 1) {
+			sql = "select * from premier_player where position=?";
+		} else if (league == 2) {
+			sql = "select * from laliga_player where position=?";
+		} else if (league == 3) {
+			sql = "select * from serie_player where position=?";
+		} else if (league == 4) {
+			sql = "select * from bundes_player where position=?";
+		} else if (league == 5) {
+			sql = "select * from ligue1_player where position=?";
 		}
-		else if(league==2){
-			sql="select * from laliga_player where position=?";
-		}
-		else if(league==3){
-			sql="select * from serie_player where position=?";
-		}
-		else if(league==4){
-			sql="select * from bundes_player where position=?";
-		}
-		else if(league==5){
-			sql="select * from ligue1_player where position=?";
-		}
-
 
 		try {
 
 			PreparedStatement ps = con.prepareStatement(sql);
 
-			ps.setString(1,position);
+			ps.setString(1, position);
 
 			ResultSet rs = ps.executeQuery();
 
@@ -418,5 +413,42 @@ public class ClubPlayerDAO {
 			con.close();
 		}
 		return playerList;
+	}
+
+	public boolean deletePlayer(String league, String player_name) throws SQLException {
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		boolean result = false;
+		String sql = "";
+		switch (league) {
+		case "1":
+			sql += "delete from premier_player where player_name=?";
+			break;
+		case "2":
+			sql += "delete from laliga_player where player_name=?";
+			break;
+		case "3":
+			sql += "delete from serie_player where player_name=?";
+			break;
+		case "4":
+			sql += "delete from bundes_player where player_name=?";
+			break;
+		case "5":
+			sql += "delete from ligue1_player where player_name=?";
+			break;
+		}
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, player_name);
+			int rs = ps.executeUpdate();
+			if (rs > 0) {
+				result = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			con.close();
+		}
+		return result;
 	}
 }
