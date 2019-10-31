@@ -8,7 +8,7 @@ public class DBConnector {
 	private static String driverName="com.mysql.jdbc.Driver";
 	private static String url="jdbc:mysql://localhost/mysitedb";
 	private static String user="root";
-	private static String password="mysql";
+	private static String password="root";
 
 
 	//--------------------DBに接続--------------------------------------

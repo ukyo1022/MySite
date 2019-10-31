@@ -102,7 +102,7 @@ name varchar(16),
 password varchar(8) unique
 );
 
-INSERT INTO admin(name,password)VALUES("admin","admin")
+INSERT INTO admin(name,password)VALUES("admin","admin");
 
 INSERT INTO premier_league(club_name,leagueid)VALUES("アーセナルFC","1");
 INSERT INTO premier_league(club_name,leagueid)VALUES("マンチェスター・ユナイテッド","1");
