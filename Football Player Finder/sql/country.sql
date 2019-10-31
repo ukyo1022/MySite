@@ -101,9 +101,6 @@ INSERT INTO country(country,region)VALUES("ガボン","アフリカ");
 INSERT INTO country(country,region)VALUES("エチオピア","アフリカ");
 INSERT INTO country(country,region)VALUES("ケニア","アフリカ");
 INSERT INTO country(country,region)VALUES("モーリシャス","アフリカ");
-INSERT INTO country(country,region)VALUES("モザンビーク","アフリカ");
-INSERT INTO country(country,region)VALUES("ナミビア","アフリカ");
-INSERT INTO country(country,region)VALUES("南アフリカ","アフリカ");
 
 INSERT INTO country(country,region)VALUES("アルゼンチン","南米");
 INSERT INTO country(country,region)VALUES("ウルグアイ","南米");
