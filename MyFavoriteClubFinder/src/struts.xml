@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="com.MyFCF.action" extends="struts-default">
+
+		<action name="HomeAction" class="com.MyFCF.action.HomeAction"
+			method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="IntroduceAction"
+			class="com.MyFCF.action.IntroduceAction" method="execute">
+			<result name="success">introduceLeague.jsp</result>
+		</action>
+		<action name="AboutThisSiteAction" class="com.MyFCF.action.AboutThisSiteAction"
+			method="execute">
+			<result name="success">aboutThisSite.jsp</result>
+		</action>
+		<action name="JumpQuestionPageAction"
+			class="com.MyFCF.action.JumpQuestionPageAction" method="execute">
+			<result name="success">question.jsp</result>
+		</action>
+		<action name="ClubJudgeAction"
+			class="com.MyFCF.action.ClubJudgeAction" method="execute">
+			<result name="success">result.jsp</result>
+			<result name="error">question.jsp</result>
+		</action>
+	</package>
+</struts>
