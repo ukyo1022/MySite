@@ -19,6 +19,7 @@
 			<li><a href='<s:url action="HomeAction"/>'>ホームへ戻る</a></li>
 		</ul>
 	</div>
+	<br><br><br><br><br><br>
 	<table class="vertical_list">
 		<tr>
 			<th>プレミアリーグ</th>

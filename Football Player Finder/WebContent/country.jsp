@@ -26,13 +26,11 @@
 		<div>
 			<table border="">
 				<tr>
-					<th>地域</th>
 					<th>国名</th>
 					<th>選手情報</th>
 				</tr>
 				<s:iterator value="dtolist">
 					<tr>
-						<td><s:property value="region" /></td>
 						<td><s:property value="country" /></td>
 						<td><s:form action="CountryPlayerAction">
 								<input type="hidden" name="country"
